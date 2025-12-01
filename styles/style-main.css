@@ -14,8 +14,6 @@ body
 #main-heading
 {
     margin-top: 128px;
-    font-size: 112px;
-    font-weight: 700;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,6 +22,11 @@ body
     color: #FFF;
 }
 
+#main-heading h1{
+    font-size: 112px;
+    font-weight: 700;
+    line-height: 128px;
+}
 #main-heading-gradient
 {
     color: transparent;
@@ -291,6 +294,12 @@ body
     justify-content: space-between;
     height: 597px;
     flex-direction: column;
+}
+
+#create_and_share-textblock button
+{
+    width: px;
+    height: px;
 }
 
 #create_and_share-title

@@ -1,145 +1,166 @@
 
-let article = document.createElement('article');
+let article = document.createElement("article");
 article.id = 'sign-in';
 
-let textBlock = document.createElement('div');
+let textBlock1 = document.createElement("div");
 textBlock1.className = 'sign-in_textblock';
 
-let h1 = document.createElement('h1');
-h1.style.fontWeight = '600';
-h1.style.fontSize = '75px';
-h1.textContent = 'Sign up';
+let h1SignUp = document.createElement("h1");
+h1SignUp.style.fontWeight = '600';
+h1SignUp.style.fontSize = '75px';
+h1SignUp.textContent = 'Sign up';
 
-let desc = document.createElement('p');
-desc.textContent = 'Fill all field for create an account.';
+let description = document.createTextNode("Fill all field for create an account.");
 
-textBlock1.appendChild(h1);
-textBlock1.appendChild(desc);
+textBlock1.appendChild(h1SignUp);
+textBlock1.appendChild(description);
+
 article.appendChild(textBlock1);
 
-// Форма
-const form = document.createElement('form');
+let form = document.createElement("form");
 form.id = 'sign-in_form';
 form.method = 'POST';
+form.action = '';
 
-// Поле Username
-const usernameP = document.createElement('p');
+
+let usernameP = document.createElement("p");
 usernameP.className = 'style_input';
 
-const usernameInput = document.createElement('input');
+let usernameInput = document.createElement("input");
 usernameInput.className = 'style_form-input';
 usernameInput.type = 'text';
 usernameInput.placeholder = 'Username';
 usernameInput.required = true;
 
-const usernameImg = document.createElement('img');
+let usernameImg = document.createElement("img");
 usernameImg.className = 'style_form-image';
-usernameImg.src = 'User.png';
+usernameImg.src = 'icons/User.png';
 usernameImg.alt = '';
-usernameImg.style.height = '30.31px';
-usernameImg.style.width = '25.31px';
+usernameImg.height = 30.31;
+usernameImg.width = 25.31;
 
 usernameP.appendChild(usernameInput);
 usernameP.appendChild(usernameImg);
 form.appendChild(usernameP);
 
-// Поле Email
-const emailP = document.createElement('p');
+let emailP = document.createElement("p");
 emailP.className = 'style_input';
 
-const emailInput = document.createElement('input');
+let emailInput = document.createElement("input");
 emailInput.className = 'style_form-input';
 emailInput.type = 'email';
 emailInput.placeholder = 'Email Address';
 emailInput.required = true;
 
-const emailImg = document.createElement('img');
+let emailImg = document.createElement("img");
 emailImg.className = 'style_form-image';
-emailImg.src = 'At_sign.png';
+emailImg.src = 'icons/At_sign.png';
 emailImg.alt = '';
-emailImg.style.height = '30.31px';
-emailImg.style.width = '30.31px';
+emailImg.height = 30.31;
+emailImg.width = 30.31;
 
 emailP.appendChild(emailInput);
 emailP.appendChild(emailImg);
 form.appendChild(emailP);
 
-// Поле Password
-const passwordP = document.createElement('p');
+let passwordP = document.createElement("p");
 passwordP.className = 'style_input';
 
-const passwordInput = document.createElement('input');
+let passwordInput = document.createElement("input");
 passwordInput.className = 'style_form-input';
 passwordInput.type = 'password';
 passwordInput.placeholder = 'Password';
 passwordInput.required = true;
 
-const passwordImg = document.createElement('img');
+let passwordImg = document.createElement("img");
 passwordImg.className = 'style_form-image';
 passwordImg.src = 'Shape-8.png';
 passwordImg.alt = '';
-passwordImg.style.height = '24px';
-passwordImg.style.width = '31px';
+passwordImg.height = 24;
+passwordImg.width = 31;
 
 passwordP.appendChild(passwordInput);
 passwordP.appendChild(passwordImg);
 form.appendChild(passwordP);
 
-// Кнопка Sign Up
-const button = document.createElement('button');
-button.type = 'submit';
-button.id = 'button_form';
-button.className = 'style_blue-button';
-button.textContent = 'Sign Up';
 
-form.appendChild(button);
+let signUpButton = document.createElement("button");
+signUpButton.type = 'submit';
+signUpButton.id = 'button_form';
+signUpButton.className = 'style_blue-button';
+signUpButton.textContent = 'Sign Up';
+
+form.appendChild(signUpButton);
 article.appendChild(form);
 
-// Блок "Or"
-const textBlock2 = document.createElement('div');
+
+let textBlock2 = document.createElement("div");
 textBlock2.className = 'sign-in_textblock';
 
-const orH1 = document.createElement('h1');
-orH1.textContent = 'Or';
+let h1Or = document.createElement("h1");
+h1Or.textContent = 'Or';
 
-const orDesc = document.createElement('p');
-orDesc.textContent = 'Sign Up With...';
+let orDescription = document.createTextNode('Sign Up With...');
 
-textBlock2.appendChild(orH1);
-textBlock2.appendChild(orDesc);
+textBlock2.appendChild(h1Or);
+textBlock2.appendChild(orDescription);
+
 article.appendChild(textBlock2);
 
-// Кнопки соцсетей
-const buttonsSection = document.createElement('section');
+
+let buttonsSection = document.createElement("section");
 buttonsSection.id = 'sign-in_buttons-field';
 
-const socialButtons = [
-  { img: 'Facebook.png', text: 'Sign up with Facebook' },
-  { img: 'G_logo.png', text: 'Sign up with Google' },
-  { img: 'Apple_logo.png', text: 'Sign up with Apple' }
-];
 
-socialButtons.forEach(btn => {
-  const button = document.createElement('button');
-  button.className = 'style_verydark-button';
+let fbButton = document.createElement("button");
+fbButton.className = 'style_verydark-button';
 
-  const img = document.createElement('img');
-  img.src = btn.img;
-  img.alt = '';
+let fbImg = document.createElement("img");
+fbImg.src = 'icons/Facebook.png';
+fbImg.alt = '';
 
-  button.appendChild(img);
-  button.appendChild(document.createTextNode(btn.text));
+let fbText = document.createTextNode('Sign up with Facebook');
 
-  buttonsSection.appendChild(button);
-});
+fbButton.appendChild(fbImg);
+fbButton.appendChild(fbText);
+
+
+let googleButton = document.createElement("button");
+googleButton.className = 'style_verydark-button';
+
+let googleImg = document.createElement("img");
+googleImg.src = 'icons/G_logo.png';
+googleImg.alt = '';
+
+let googleText = document.createTextNode("Sign up with Google");
+
+googleButton.appendChild(googleImg);
+googleButton.appendChild(googleText);
+
+let appleButton = document.createElement("button");
+appleButton.className = 'style_verydark-button';
+
+let appleImg = document.createElement("img");
+appleImg.src = 'icons/Apple_logo.png';
+appleImg.alt = '';
+
+let appleText = document.createTextNode("Sign up with Apple");
+
+appleButton.appendChild(appleImg);
+appleButton.appendChild(appleText);
+
+buttonsSection.appendChild(fbButton);
+buttonsSection.appendChild(googleButton);
+buttonsSection.appendChild(appleButton);
+
 
 article.appendChild(buttonsSection);
 
-// Ссылка "Already have an account?"
-const link = document.createElement('span');
-link.id = 'sign-in_str';
-link.textContent = 'Already have an account? Please Log in.';
 
-article.appendChild(link);
+let loginLink = document.createElement("span");
+loginLink.id = 'sign-in_str';
+loginLink.textContent = 'Already have an account? Please Log in.';
+
+article.appendChild(loginLink);
 
 document.body.appendChild(article);
