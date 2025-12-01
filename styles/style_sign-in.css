@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+body
+{
+    margin: 0 130px 0;
+    background-color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+#sign-in
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 79px;
+}
+.sign-in_textblock
+{
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+}
+
+.sign-in_textblock::last-child
+{
+    margin-top: 67px;
+}
+
+#sign-in_form
+{
+    margin-top: 79px;
+    max-width: 1118px;
+    height: 202px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#button_form
+{
+    width: 488px;
+    height: 85px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+#sign-in_buttons-field
+{
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sign-in_str
+{
+    margin-top: 66px;
+    font-size: 16px;
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,64 @@
+#header
+{
+    margin-top: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: #707070;
+}
+
+
+#nav
+{
+    width: 398px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+}
+
+#nav-links
+{
+    width: 398px;
+    display: inherit;
+    justify-content: space-between;
+}
+
+.nav-link
+{
+    color: #707070;
+    text-decoration: solid;
+}
+
+.nav-link:hover, #login-link:hover
+{
+    cursor: pointer;
+    color: #3C82F4;
+}
+
+
+#login-link{
+    margin-right: 24px;
+    color: #707070;
+    text-decoration: solid;
+}
+
+#header-button
+{
+    width: 119px;
+    height: 55px;
+    border-radius: 15px;
+    border-width: 0px;
+    background-color: #306EF7;
+    color: #FFF;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 20px;
+}
+
+#header-button:hover{
+    background-color: #2658c2;
+    cursor: pointer;
+}
